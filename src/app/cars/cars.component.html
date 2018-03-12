@@ -6,5 +6,5 @@
 
 <hr />
 
-<input type="text" class="form-control" (input)="onKeyUp($event)">
+<input type="text" class="form-control" #myinp (input)="onKeyUp(myinp.value)">
 <p>{{inputText}}</p>
