@@ -16,9 +16,9 @@ export class CarsComponent {
   addCar(){
     this.addCarStatus = "Car added"
   }
-  onKeyUp (value){
-    // console.log(event)
-    this.inputText = value;
+  onKeyUp (event){
+     console.log(event.code)
+    this.inputText = event.target.value;
   }
 
 }
