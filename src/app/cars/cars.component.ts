@@ -7,13 +7,19 @@ import { Component } from '@angular/core';
 })
 export class CarsComponent {
 
-canAddCar = false;
+  addCarStatus = '';
+  inputText = '';
 
   constructor(){
-      setTimeout(() => {
-        
-      this.canAddCar = true;
-    },4000);
   }
+
+  addCar(){
+    this.addCarStatus = "Car added"
+  }
+  onKeyUp (event: Event){
+    // console.log(event)
+    this.inputText = (<HTMLImputElement>event.target).value;
+  }
+
 }
 
