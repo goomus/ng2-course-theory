@@ -2,11 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-car',
-  templateUrl: "car.component.html",
-  styles: [`
-  h2 {
-  }  
-    `]
+  templateUrl: "car.component.html"
 })
 export class CarComponent {
 carName: string = 'Ford';
